@@ -4,7 +4,7 @@ TCLOUD_ENV = 'dev'
 SERVER_ENV = 'dev'
 
 # SQL 连接字符串
-SQLALCHEMY_DATABASE_URI = 'mysql://username:password@192.168.0.100:3306/tcloud?charset=utf8'
+SQLALCHEMY_DATABASE_URI = 'mysql://<username>:<password>@<host>:<port>/<db>?charset=utf8'
 
 # 密钥相关
 SECRET = '####'

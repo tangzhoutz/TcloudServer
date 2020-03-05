@@ -3,7 +3,9 @@
 
 前端传送门：https://github.com/bigbaser/Tcloud
 
-线上demo地址：http://tcloud-demo.ywopt.com/#/login （账号：admin 密码：123456）
+线上demo地址：http://tcloud-demo.innotechx.com/#/login （账号：admin 密码：123456）
+
+文档地址(安装、常见问题)：[查看](deploy/docs/README.md)
 
 # 一、什么是Tcloud?
 
@@ -63,10 +65,68 @@
 # 四、安装部署
 [快速安装](https://github.com/bigbaser/TcloudServer/wiki/部署)
 
+# 五、LICESE
+See [LICESEN](https://github.com/bigbaser/TcloudServer/blob/master/LICENSE)
+
+
 #### 联系我们
 欢迎扫描下方二维码关注我们
 
 ![image](http://tcloud-static.oss-cn-beijing.aliyuncs.com/tcloud_git/tc.jpg)
 
 QQ群：839084842
+
+
+# Release Note
+
+## Version 2.2.0 (2019-09-29)
+
+### Bug 修复：
+
+1. 资产相关：发生借用时，流转按钮不变色
+2. 去除多余的代码 JobsRecordBusiness
+3. 其他已知的问题
+
+
+### 新功能:
+
+> 1. 功能
+
+- jria 同步 requirement（需求） 增加 creator（创建人）和 modifier（修改人）
+- requirement（需求）增加 expect_time（期望时间）
+- jira 同步 requirement（需求）去除检测项目
+- Dashboard 增加显示每天新建和关闭的 issue（缺陷）数目
+- 增加名称的重复检测 用例、需求、版本
+
+> 2. 接口
+
+- /v1/case/list [POST] 通过 case_ids 获取 Cases 列表
+
+### 优化:
+
+> 1. 前端分页改为后端分页
+
+- case（用例）
+- board（我的）
+- module（模块）
+
+> 2. 功能优化
+
+- Issue 支持按照 level（等级）查询
+- 我的（首页）支持按照 title（标题）模糊查询
+- Module（模块）支持按照 module_name（标题）模糊查询
+- 返回默认 data 为 []
+- tag 功能重构
+- 未知错误统一返回中文
+
+
+> 3. 性能优化
+
+- stf 设备启用 redis
+- 站内信启用 websocket 和 redis
+
+
+
+
+
 
