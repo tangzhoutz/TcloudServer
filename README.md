@@ -1,7 +1,10 @@
+# 通知
+本项目仓库由于客观原因不在维护，项目迁移至 https://github.com/JunManYuanLong/TcloudServer
+
 # Tcloud
 感觉项目不错的点个star，项目持续更新，如有疑问可联系QQ群：839084842
 
-前端传送门：https://github.com/bigbaser/Tcloud
+前端传送门：https://github.com/JunManYuanLong/Tcloud
 
 线上demo地址：http://tcloud-demo.innotechx.com/#/login （账号：admin 密码：123456）
 
